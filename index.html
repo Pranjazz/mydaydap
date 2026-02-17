@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, Always</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Hey, Love!</h1>
+        <p class="subtitle">A corner for You</p>
+        <p class="opening-line">
+            I made a small corner of internet which only belongs to my babygirl,
+            I know some days the weight feels heavier than others, for the times you feel heavy,
+            just to remind you that your chomu is always with you, that you're deeply loved,
+            "this is our corner, this belongs to us only!"
+        </p>
+    </div>
+
+    <div class="content-grid">
+
+        <!-- Letter from him -->
+        <div class="section letter">
+            <h2 class="section-header">A Letter to You</h2>
+            <div class="letter-body">
+                <p>My MOT,</p>
+                <p>
+                    welcome to this little corner of our world, myove!!
+                    I made this little place for the moments you feel tired, overwhelmed, or miss me or us. Every word here is my way of holding you.
+                    There are no perfect words for moments like these, but I want you to know that whatever you're feeling right now is valid.
+                    i want you to know that i still feel the butterflies in my heart whenever i think of you, your thoughts always makes my heart blush, and i always thank god that he gave me
+                    such a beautiful soul in this world. i admit that i am so deep in love and i will always love you like that, and its deeper than the oceans.
+                    i never imagined myself being in love, i never knew that i would find so pure a soulmate. your love nourishes my soul, my heart only belongs to you and it will always be yours.
+                </p>
+                <p>
+                    You carry so much grace, even when you don't feel it. The world sees your strength, but I see the vulnerability you hide,
+                    and I love you for both. you are my so strong sa pyaara sa bchchcha, Aren't YOU? and You don't have to be anything but yourself.
+
+                    When I think of you, I don't think of moments at all, I think of presence — the presence i feel in my heart. The calm that comes from knowing someone understands you without needing words.
+                    That's what you are to me..
+                </p>
+                <p>
+                    I'm here and i will always be here, In the silence, in the chaos, in the in-between moments. You're not facing anything alone.
+                    We'll get through every single damn thing together, one breath at a time.
+                    I don't know what name fits us in this world, because what we share feels older than definitions. It's not a relationship, not a label, not something fragile.
+                    Its OUR soulship — quiet, deep, and forever moving with us.
+
+                    I love you in all the ways. I love you in a way that simply exists.
+                    You are pure not because of anything,
+                    but because your heart is honest, gentle, and real.
+                    The way you feel deeply, care silently,
+                    and carry softness even when the world is heavy…
+                    that's rare. That's beautiful.
+                    i would never stop loving you.
+
+                    On days you feel heavy, tired, or in pain,
+                    I hope you remember this:
+
+                    somewhere, a soul is sitting quietly with yours, holding space for you,
+                    loving you without conditions,
+                    without fear,
+                    without end.
+
+                    That soul is mine.
+
+                    No matter where life moves us,
+                    what we call ourselves,
+                    or how the world changes —
+                    this soulship remains.
+                    Soft. Steady. Eternal.
+                </p>
+                <div class="signature">always yours :)</div>
+            </div>
+        </div>
+
+        <!-- Thoughts Carousel -->
+        <div class="section">
+            <h2 class="section-header">Reminder:</h2>
+            <div class="thought-carousel">
+                <div class="thought active">
+                    <p class="thought-text">"always remember, that your chomu loves you more than he loves himself."</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+                <div class="thought">
+                    <p class="thought-text">"OUR SOULSHIP is PERPETUAL"</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+                <div class="thought">
+                    <p class="thought-text">"I AM ONLY and ONLY YOURS"</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+                <div class="thought">
+                    <p class="thought-text">"You deserve tenderness, especially from yourself. Be as kind to your own heart as you are to everyone else's. All i want is you to love yourself first, you are worthy of being loved, you are so pure."</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+                <div class="thought">
+                    <p class="thought-text">"What we share doesn't need promises, it's perpetual, because it's true. It's invincible, because it lives in who we are, not what we claim."</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+                <div class="thought">
+                    <p class="thought-text">"In a world that constantly demands more, remember: you are enough. Exactly as you are, in this very moment — you are enough."</p>
+                    <p class="thought-attribution">For MOT</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <div class="carousel-dot active" onclick="changeThought(0)"></div>
+                <div class="carousel-dot" onclick="changeThought(1)"></div>
+                <div class="carousel-dot" onclick="changeThought(2)"></div>
+                <div class="carousel-dot" onclick="changeThought(3)"></div>
+                <div class="carousel-dot" onclick="changeThought(4)"></div>
+                <div class="carousel-dot" onclick="changeThought(5)"></div>
+            </div>
+        </div>
+
+        <!-- Affirmation -->
+        <div class="section affirmation-box">
+            <h2 class="section-header">NO negative self-talks</h2>
+            <div class="affirmation-display" id="affirmation">
+                "The way you navigate life with such grace and courage is remarkable. I see you, all of you, and I'm in awe."
+            </div>
+            <button class="btn" onclick="newAffirmation()">Give me another</button>
+        </div>
+
+        <!-- Memories -->
+        <div class="section">
+            <h2 class="section-header">Our Moments</h2>
+            <div class="section-content">
+                <p>These are the pieces of us that I hold close, especially when things feel difficult.</p>
+            </div>
+            <div class="memory-grid">
+                <div class="memory-card" onclick="showMemoryModal('quiet')">
+                    <h3 class="memory-title">The Quiet Intimacy</h3>
+                    <p class="memory-description">Those moments of comfortable silence where words aren't needed</p>
+                </div>
+                <div class="memory-card" onclick="showMemoryModal('late')">
+                    <h3 class="memory-title">Late Night talks</h3>
+                    <p class="memory-description">hume time hi pta nhi chalta hai yr, even an hour feels like a passed min</p>
+                </div>
+                <div class="memory-card" onclick="showMemoryModal('laugh')">
+                    <h3 class="memory-title">Your Laugh</h3>
+                    <p class="memory-description">The sound that makes everything else fade away</p>
+                </div>
+                <div class="memory-card" onclick="showMemoryModal('first')">
+                    <h3 class="memory-title">How We Began</h3>
+                    <p class="memory-description">You changed my life forever</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter to Him -->
+        <div class="section letter-to-him">
+            <h2 class="section-header">Write to Me</h2>
+            <p class="letter-intro">
+                Sometimes words live inside you and have nowhere to go. Leave them here — 
+                I'll always find my way back to read them.
+                This is your space to say anything, everything, or nothing at all.
+            </p>
+            <div class="writing-wrapper">
+                <div class="paper-lines"></div>
+                <textarea
+                    class="letter-textarea"
+                    id="letterTextarea"
+                    placeholder="My chomu, today I wanted to tell you…"
+                ></textarea>
+            </div>
+            <div class="letter-actions">
+                <button class="save-btn" onclick="saveLetter()">Keep this letter</button>
+                <button class="clear-btn" onclick="clearLetter()">Clear</button>
+                <span class="save-confirmation" id="saveConfirmation">✦ Saved, always.</span>
+            </div>
+
+            <!-- Saved letters appear here -->
+            <div class="saved-letters" id="savedLettersContainer" style="display:none;">
+                <p class="saved-letters-title">Your previous letters</p>
+                <div id="savedLettersList"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Gesture Buttons -->
+    <div class="gesture-section">
+        <div class="gesture-icon">🕯️</div>
+        <p class="gesture-text">
+            When words feel inadequate and the world feels too loud,
+            know that I'm holding space for you. Always.
+        </p>
+        <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+            <button class="gesture-btn" onclick="sendComfort()"><span>HUG ME</span></button>
+            <button class="gesture-btn" onclick="playVoiceNote()"><span>ECHOES OF US</span></button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
